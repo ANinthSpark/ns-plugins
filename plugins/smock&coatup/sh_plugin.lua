@@ -23,7 +23,7 @@ nut.command.add("smock", {
                 targetChar:setModel(SCHEMA.smockCompatableModels[currentModel])
                 targetPly:Say("/me pulls out a smock and equips it.")
             elseif reversedSmockTable[currentModel] ~= nil then
-                targetChar:setModel(SCHEMA.reversedSmockTable[currentModel])
+                targetChar:setModel(reversedSmockTable[currentModel])
                 targetPly:Say("/me takes off the smock and stores it.")
             else
                 targetPly:notify("This model doesn't support a smock.")
@@ -52,7 +52,7 @@ nut.command.add("coat", {
                 targetChar:setModel(SCHEMA.coatCompatableModels[currentModel])
                 targetPly:Say("/me pulls out a coat and equips it.")
             elseif reversedCoatTable[currentModel] ~= nil then
-                targetChar:setModel(SCHEMA.reversedCoatTable[currentModel])
+                targetChar:setModel(reversedCoatTable[currentModel])
                 targetPly:Say("/me takes off the coat and stores it.")
             else
                 targetPly:notify("This model doesn't support a coat.")
